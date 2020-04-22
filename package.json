@@ -1,0 +1,44 @@
+{
+  "name": "react-app-tap-map",
+  "version": "0.5.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.4",
+    "apollo-boost": "^0.4.7",
+    "autoprefixer": "^9.7.6",
+    "axios": "^0.19.0",
+    "graphql": "^15.0.0",
+    "leaflet": "^1.6.0",
+    "moment": "^2.24.0",
+    "postcss-cli": "^7.1.0",
+    "react": "^16.13.1",
+    "react-content-loader": "^5.0.4",
+    "react-dom": "^16.13.1",
+    "react-leaflet": "^2.6.3",
+    "react-scripts": "^3.0.1",
+    "tailwindcss": "^1.2.0"
+  },
+  "scripts": {
+    "start": "npm run watch:css && react-scripts start",
+    "build": "run-p build:** && npm run build:css && react-scripts build",
+    "build:app": "react-scripts build",
+    "build:css": "postcss css/tailwind.css -o src/assets/tailwind.css",
+    "watch:css": "postcss css/tailwind.css -o src/assets/tailwind.css",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "netlify-lambda": "^1.4.5",
+    "npm-run-all": "^4.1.5",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
