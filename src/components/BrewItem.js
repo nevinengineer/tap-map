@@ -20,13 +20,14 @@ const BrewItem = ({ brew }) => {
 
   return (
  
-    <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-      <div className="m-2">
-        <div className="text-gray-900 font-bold text-xl mb-2">{brew.name}</div>
+    // <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-2 m-2 flex flex-col justify-between leading-normal">
+       <div className="p-2 m-2 flex flex-col justify-between leading-normal">
+      {/* <div className="m-2"> */}
+        <div className="text-gray-900 font-bold text-l mb-2">{brew.name}</div>
         {/* <div className="text-gray-700 font-semibold text-lg mb-2">
           {brew.brewer.name}
         </div> */}
-        <div className="text-gray-600 font-bold text-md mb-2">
+        <div className="text-gray-600 font-bold text-sm mb-2">
           {brew.abv}% ABV {brew.ibu} IBU
         </div>
         <p className="truncate ... text-gray-700 text-base mb-2">
@@ -38,7 +39,7 @@ const BrewItem = ({ brew }) => {
         </p> */}
         {/* <MapComponent position={position} className="flex-auto"></MapComponent> */}
       </div>
-    </div>
+    // </div>
   );
 };
 

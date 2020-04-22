@@ -6,28 +6,28 @@ import TypeItem from "./TypeItem";
 import SkeletonLoader from "./SkeletonLoader";
 import NoResults from "./NoResults";
 
-const GET_BREWS_BY_TYPE = gql`
-  query BeerOnTapByType($beer_type: String) {
-    brews(where: { type: { _ilike: $beer_type } }) {
-      id
-      abv
-      ibu
-      name
-      description
-      brewer {
-        name
-      }
-      on_taps {
-        establishmentByEstablishment {
-          name
-          establishment_location {
-            location
-          }
-        }
-      }
-    }
-  }
-`;
+// const GET_BREWS_BY_TYPE = gql`
+//   query BeerOnTapByType($beer_type: String) {
+//     brews(where: { type: { _ilike: $beer_type } }) {
+//       id
+//       abv
+//       ibu
+//       name
+//       description
+//       brewer {
+//         name
+//       }
+//       on_taps {
+//         establishmentByEstablishment {
+//           name
+//           establishment_location {
+//             location
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
 
 const SEARCH = gql`
   query Search($query: String) {
@@ -93,17 +93,12 @@ const SearchList = ({ query, searched }) => {
   const brewerList = [];
   const brewList = [];
   const brewTypeList = [];
-  const [resultVisibility, setResultVisibility] = useState("hide")
+  const [resultVisibile, setResultVisibile] = useState(true);
 
-  const handleResultVisibilityClick = () =>{
-    if(resultVisibility === "hide"){
-      setResultVisibility("show")
-    }
-    if(resultVisibility === "show"){
-      setResultVisibility("hide")
-    }
+  // const handleResultVisibilityClick = () =>{
+  //   if(resultVisibile)
 
-  }
+  // }
   // const { loading, error, data } = useQuery(GET_BREWS_BY_TYPE, {
   //   variables: { beer_type },
   // });
@@ -153,51 +148,53 @@ const SearchList = ({ query, searched }) => {
     });
   }
 
+
   return (
     <div>
       {data.length !== 0 && (
         <div className="flex justify-center">
           <button
-            onClick={handleResultVisibilityClick}
-            className="text-center font-semibold text-teal-900"
+            onClick={() => setResultVisibile(!resultVisibile)}
+            className="text-center font-semibold text-teal-900 mb-4"
           >
-            {resultVisibility} results
+            {resultVisibile ? "hide" : "show"} results
           </button>
         </div>
       )}
-      {data.brews.length !== 0 && (
-        <div>
-          <div className="text-center font-bold text-xl text-teal-800 p-2">
-            Beers by Name
+      <div className={`${resultVisibile ? `inline h-auto` : `hidden`}`}>
+        {data.brews.length !== 0 && (
+          <div>
+            <div className="text-center font-bold text-xl text-teal-800 p-2">
+              Beers by Name
+            </div>
+            <div className="py-6 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+              {brewList}
+            </div>
           </div>
-          <div className="py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-            {brewList}
+        )}
+        {data.brew_types.length !== 0 && (
+          <div>
+            <div className="text-center font-bold text-xl text-teal-800 p-2">
+              Beers by Type
+            </div>
+            <div className="py-6 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+              {brewTypeList}
+            </div>
           </div>
-        </div>
-      )}
-      {data.brew_types.length !== 0 && (
-        <div>
-          <div className="text-center font-bold text-xl text-teal-800 p-2">
-            Beers by Type
+        )}
+        {data.brew_types.length === 0 && data.brews.length === 0 && (
+          <div>
+            <div className="flex justify-center">
+              <NoResults width={"10%"} height={"10%"}></NoResults>
+            </div>
+            <div className="flex justify-center text-teal-900 font-bold text-l mb-4">
+              We're comin' up empty!
+            </div>
           </div>
-          <div className="py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-            {brewTypeList}
-          </div>
-        </div>
-      )}
-      {data.brew_types.length === 0 && data.brews.length === 0 && (
-        <div>
-          <div className="flex justify-center">
-            <NoResults width={"100%"} height={"100%"}></NoResults>
-          </div>
-          <div className="flex justify-center text-teal-900 font-bold text-xl">
-            We're comin' up empty!
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
 
 export default SearchList;
-export { GET_BREWS_BY_TYPE };

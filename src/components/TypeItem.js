@@ -15,21 +15,16 @@ const flipLongLat = ({ coordinates }) => {
 
 const TypeBrewItem = ({ brew }) => {
   return (
-    <div>
-        {brew.name}
-      {/* <div>{brew.name}</div>
-      <div>{brew.description}</div>
-      <div>{brew.type}</div>
-      <div>
-        {brew.abv}% ABV {brew.ibu} IBU
-      </div> */}
+    <div className="mb-2">
+      <div className="text-gray-700 font-medium text-md">{brew.name}</div>
+      <div className="text-gray-600 font-sm text-md">{brew.abv} % ABV {brew.ibu} IBU </div>
     </div>
   );
 };
 
 const TypeItem = ({ type }) => {
   const brewTypeList = [];
-  console.log(type)
+  console.log(type);
   type.brews.forEach((brew, index) => {
     brewTypeList.push(<TypeBrewItem key={index} index={index} brew={brew} />);
     // console.log(type)
@@ -38,7 +33,10 @@ const TypeItem = ({ type }) => {
 
   return (
     <div>
-      <div> {type.type +'s'} </div>
+      <div className="text-teal-800 font-bold text-l mb-2">
+        {" "}
+        {type.type + "s"}{" "}
+      </div>
       <div>{brewTypeList}</div>
     </div>
   );

@@ -3,7 +3,7 @@ import "../assets/tailwind.css";
 
 const NoResults = ({ width, height, viewBox }) => {
   return (
-    <view className={{ aspectRatio: 1 }}>
+    // <view className={{ aspectRatio: 1 }}>
       <svg
         width={width}
         height={height}
@@ -87,7 +87,7 @@ const NoResults = ({ width, height, viewBox }) => {
           />
         </g>
       </svg>
-    </view>
+    // </view>
   );
 };
 export default NoResults;
