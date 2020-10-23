@@ -3455,12 +3455,6 @@ video {
   background-color: rgba(237, 100, 166, var(--bg-opacity));
 }
 
-.focus\:bg-pink-600:focus {
-  --bg-opacity: 1;
-  background-color: #d53f8c;
-  background-color: rgba(213, 63, 140, var(--bg-opacity));
-}
-
 .focus\:bg-pink-700:focus {
   --bg-opacity: 1;
   background-color: #b83280;
