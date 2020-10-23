@@ -5,29 +5,7 @@ import BrewItem from "./BrewItem";
 import TypeItem from "./TypeItem";
 import SkeletonLoader from "./SkeletonLoader";
 import NoResults from "./NoResults";
-
-// const GET_BREWS_BY_TYPE = gql`
-//   query BeerOnTapByType($beer_type: String) {
-//     brews(where: { type: { _ilike: $beer_type } }) {
-//       id
-//       abv
-//       ibu
-//       name
-//       description
-//       brewer {
-//         name
-//       }
-//       on_taps {
-//         establishmentByEstablishment {
-//           name
-//           establishment_location {
-//             location
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+import LoadingBeer from "./LoadingBeer";
 
 const SEARCH = gql`
   query Search($query: String) {
@@ -50,6 +28,7 @@ const SEARCH = gql`
       description
       abv
       id
+      type
       brewer {
         name
       }
@@ -94,51 +73,29 @@ const SearchList = ({ query, searched }) => {
   const brewList = [];
   const brewTypeList = [];
   const [resultVisibile, setResultVisibile] = useState(true);
-
-  // const handleResultVisibilityClick = () =>{
-  //   if(resultVisibile)
-
-  // }
-  // const { loading, error, data } = useQuery(GET_BREWS_BY_TYPE, {
-  //   variables: { beer_type },
-  // });
   const { loading, error, data } = useQuery(SEARCH, {
     variables: { query },
   });
   if (loading) {
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-        <SkeletonLoader className="flex-col "></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
-        <SkeletonLoader className="flex-col"></SkeletonLoader>
+      <div className="flex justify-center">
+        <LoadingBeer></LoadingBeer>
       </div>
     );
   }
   if (error) {
-    console.error(error);
+    // console.error(error);
     return <div> An Error Occured </div>;
   }
 
   // console.log(data.establishments);
   // console.log(data.brewers);
   // console.log(data.brew_types);
-  console.log(data);
+  // console.log(data.brews);
+  // console.log(data);
 
   if (data.brew_types.length !== 0) {
     data.brew_types.forEach((type, index) => {
-      // console.log(type)
       brewTypeList.push(<TypeItem key={type.id} index={index} type={type} />);
     });
   }
@@ -148,10 +105,9 @@ const SearchList = ({ query, searched }) => {
     });
   }
 
-
   return (
     <div>
-      {data.length !== 0 && (
+      {/* {data.length !== 0 && (
         <div className="flex justify-center">
           <button
             onClick={() => setResultVisibile(!resultVisibile)}
@@ -160,19 +116,23 @@ const SearchList = ({ query, searched }) => {
             {resultVisibile ? "hide" : "show"} results
           </button>
         </div>
-      )}
-      <div className={`${resultVisibile ? `inline h-auto` : `hidden`}`}>
-        {data.brews.length !== 0 && (
-          <div>
-            <div className="text-center font-bold text-xl text-teal-800 p-2">
-              Beers by Name
-            </div>
-            <div className="py-6 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-              {brewList}
-            </div>
+      )} */}
+      {/* <div className={`${resultVisibile ? `h-auto` : `hidden`}`}> */}
+      {data.brews.length !== 0 && (
+        <div>
+          <div className="text-center font-bold text-xl text-teal-800 p-2">
+            Beers
           </div>
-        )}
-        {data.brew_types.length !== 0 && (
+          <div className="h-auto w-auto overflow-x-scroll">
+            <div className="grid grid-rows-1 grid-flow-col gap-4 mx-8">{brewList}</div>
+          </div>
+
+          {/* <div className="py-6 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+              {brewList}
+            </div> */}
+        </div>
+      )}
+      {/* {data.brew_types.length !== 0 && (
           <div>
             <div className="text-center font-bold text-xl text-teal-800 p-2">
               Beers by Type
@@ -181,19 +141,19 @@ const SearchList = ({ query, searched }) => {
               {brewTypeList}
             </div>
           </div>
-        )}
-        {data.brew_types.length === 0 && data.brews.length === 0 && (
-          <div>
-            <div className="flex justify-center">
-              <NoResults width={"10%"} height={"10%"}></NoResults>
-            </div>
-            <div className="flex justify-center text-teal-900 font-bold text-l mb-4">
-              We're comin' up empty!
-            </div>
+        )} */}
+      {data.brew_types.length === 0 && data.brews.length === 0 && (
+        <div>
+          <div className="flex justify-center">
+            <NoResults width={"10%"} height={"10%"}></NoResults>
           </div>
-        )}
-      </div>
+          <div className="flex justify-center text-teal-900 font-bold text-l mb-4">
+            We're comin' up empty!
+          </div>
+        </div>
+      )}
     </div>
+    // </div>
   );
 };
 

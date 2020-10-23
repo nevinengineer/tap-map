@@ -3,11 +3,13 @@ import "../assets/tailwind.css";
 
 const TapItem = ({ brew }) => {
 
+  console.log(brew.brewByBrew.ibu)
+
   return (
     <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
       <div className="text-gray-900 font-bold text-lg mb-2">{brew.brewByBrew.name}</div>
       <div className="text-gray-600 font-bold text-md mb-2">
-        {brew.brewByBrew.abv}% ABV {brew.brewByBrew.ibu} IBU
+        {brew.brewByBrew.abv}% ABV | {brew.brewByBrew.ibu == null ? 'No': brew.brewByBrew.ibu} IBU
       </div>
       <p className="text-gray-700 text-base mb-2">
         {brew.brewByBrew.description}
