@@ -17,7 +17,7 @@ const SearchBar = ({ onChildSubmit }) => {
   };
 
   return (
-    <div className="flex w-10/12">
+    <div className="flex w-full lg:w-11/12">
       <div className="flex relative w-full">
         <input
           onKeyDown={keyPress}

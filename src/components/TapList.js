@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import TapItem from "./TapItem";
 import SkeletonLoader from "./SkeletonLoader";
 import NoResults from "./NoResults";
-import Splash from "./Splash";
 
 const ON_TAP_AT_ESTABLISHMENT = gql`
   query OnTapAtEstablishment($establishment_id: uuid) {
@@ -49,16 +48,18 @@ const TapList = ({ establishment_id }) => {
     console.error(error);
     return <div>{error}</div>;
   }
-  console.log(data);
   const tapList = [];
   data.on_tap.forEach((index) => {
     tapList.push(<TapItem key={index} index={index} brew={index} />);
   });
   return (
     <div>
-      <div className="font-bold text-xl text-justify text-teal-800 m-2 tracking-tight">
-        On Tap at {data.establishments[0].name}
+      <div className="flex w-auto">
+        <div className="font-bold w-11/12 text-xl text-justify text-teal-800 m-2 tracking-tight">
+          On Tap at {data.establishments[0].name}
+        </div>
       </div>
+
       <div>
         {data.on_tap.length !== 0 && (
           <div className="flex grid grid-cols-1 overflow-auto max-h-screen">

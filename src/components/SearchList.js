@@ -3,7 +3,6 @@ import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import BrewItem from "./BrewItem";
 import TypeItem from "./TypeItem";
-import SkeletonLoader from "./SkeletonLoader";
 import NoResults from "./NoResults";
 import LoadingBeer from "./LoadingBeer";
 
@@ -33,6 +32,7 @@ const SEARCH = gql`
         name
       }
       on_taps {
+        establishment_id
         establishmentByEstablishment {
           establishment_location {
             location
@@ -67,12 +67,13 @@ const SEARCH = gql`
   }
 `;
 
-const SearchList = ({ query, searched }) => {
+const SearchList = ({ query, onItemSelect }) => {
   const establishmentList = [];
   const brewerList = [];
   const brewList = [];
   const brewTypeList = [];
   const [resultVisibile, setResultVisibile] = useState(true);
+  const [activeItem, setActiveItem] = useState(null);
   const { loading, error, data } = useQuery(SEARCH, {
     variables: { query },
   });
@@ -101,9 +102,27 @@ const SearchList = ({ query, searched }) => {
   }
   if (data.brews.length !== 0) {
     data.brews.forEach((brew, index) => {
-      brewList.push(<BrewItem key={brew.id} index={index} brew={brew} />);
+      //console.log(brew.on_taps[0].establishment_id)
+      brewList.push(
+        <BrewItem
+          key={brew.id}
+          index={index}
+          brew={brew}
+          onItemClick={() => handleOnClick(index)}
+          active={activeItem === brew.id ? true : false}
+        />
+      );
     });
   }
+
+  const handleOnClick = (index) => {
+    setActiveItem(brewList[index].key);
+    onItemSelect(brewList[index].props.brew);
+  };
+
+  // const handleSelect = () => {
+  //   onItemSelect(activeItem)
+  // }
 
   return (
     <div>
@@ -124,7 +143,9 @@ const SearchList = ({ query, searched }) => {
             Beers
           </div>
           <div className="h-auto w-auto overflow-x-scroll">
-            <div className="grid grid-rows-1 grid-flow-col gap-4 mx-8">{brewList}</div>
+            <div className="grid grid-rows-1 grid-flow-col gap-4 mx-8">
+              {brewList}
+            </div>
           </div>
 
           {/* <div className="py-6 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">

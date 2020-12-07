@@ -7,7 +7,8 @@ const defaultSettings = {
 };
 
 export const usePosition = (watch = false, settings = defaultSettings) => {
-  const [position, setPosition] = useState({});
+  const default_position = {latitude: 39.0, longitude:-77.0}
+  const [position, setPosition] = useState(default_position);
   const [error, setError] = useState(null);
 
   const onChange = ({coords, timestamp}) => {
