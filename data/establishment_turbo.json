@@ -1,0 +1,900 @@
+{
+    "version": 0.6,
+    "generator": "Overpass API 0.7.61.5 4133829e",
+    "osm3s": {
+      "timestamp_osm_base": "2023-09-21T12:06:45Z",
+      "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+    },
+    "elements": [
+  
+  {
+    "type": "node",
+    "id": 784760201,
+    "lat": 38.8486437,
+    "lon": -77.3032818,
+    "tags": {
+      "addr:city": "Fairfax",
+      "addr:housenumber": "10382",
+      "addr:postcode": "22030-2508",
+      "addr:state": "VA",
+      "addr:street": "Willard Way",
+      "craft": "brewery",
+      "name": "Chubby Squirrel Brewing Company",
+      "phone": "+15719891082",
+      "website": "http://www.chubbysquirrelbrewing.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2291863402,
+    "lat": 38.8766430,
+    "lon": -77.0055720,
+    "tags": {
+      "brewery": "various",
+      "craft": "brewery",
+      "cuisine": "american",
+      "microbrewery": "no",
+      "name": "Gordon Biersch",
+      "operator": "Gordon Biersch",
+      "product": "beer"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2715422142,
+    "lat": 38.3842947,
+    "lon": -77.4409170,
+    "tags": {
+      "addr:city": "Fredericksburg",
+      "addr:housenumber": "33",
+      "addr:postcode": "22405",
+      "addr:street": "Perchwood Drive",
+      "craft": "brewery",
+      "name": "Adventure Brewing Company",
+      "phone": "(540) 242-8876",
+      "website": "https://adventurebrewing.com/",
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2999980418,
+    "lat": 38.9603005,
+    "lon": -77.0053314,
+    "tags": {
+      "addr:city": "Washington",
+      "addr:housenumber": "5788",
+      "addr:postcode": "20011",
+      "addr:state": "DC",
+      "addr:street": "2nd Street Northeast",
+      "craft": "brewery",
+      "name": "Hellbender Brewing Company",
+      "phone": "+1 202 827 8768",
+      "product": "beer;snacks",
+      "website": "https://www.hellbenderbeer.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3012756955,
+    "lat": 38.9297174,
+    "lon": -76.9601984,
+    "tags": {
+      "addr:housenumber": "3178",
+      "addr:postcode": "20018",
+      "addr:street": "Bladensburg Road Northeast",
+      "craft": "brewery",
+      "name": "DC Brau",
+      "opening_hours": "Th 16:00-21:00, Fr 15:00-23:00, Sa 12:00-20:00, Su 12:00-18:00",
+      "phone": "+1-202-621-8890",
+      "product": "beer",
+      "ramp:wheelchair": "yes",
+      "website": "https://dcbrau.com"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3025378176,
+    "lat": 38.9138700,
+    "lon": -77.0008560,
+    "tags": {
+      "addr:city": "Washington",
+      "addr:housenumber": "327",
+      "addr:postcode": "20002",
+      "addr:state": "DC",
+      "addr:street": "S Street Northeast",
+      "craft": "brewery",
+      "email": "info@lostgenbrewing.com",
+      "name": "Lost Generation Brewing Company",
+      "operator": "Lost Generation Brewing Company",
+      "phone": "(202) 621-8525",
+      "product": "beer;clothes",
+      "source": "local knowledge",
+      "website": "https://www.lostgenbrewing.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3655748665,
+    "lat": 38.9957359,
+    "lon": -78.2196656,
+    "tags": {
+      "craft": "brewery",
+      "name": "Backroom Brewery",
+      "source:position": "Bing"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3774373259,
+    "lat": 39.1440042,
+    "lon": -77.7203208,
+    "tags": {
+      "addr:city": "Purcellville",
+      "addr:country": "US",
+      "addr:housenumber": "404",
+      "addr:postcode": "20132",
+      "addr:state": "VA",
+      "addr:street": "Browning Court",
+      "craft": "brewery",
+      "name": "Adroit Theory Brewing",
+      "operator": "Adroit Theory Brewing",
+      "phone": "703.722.3144",
+      "source": "site visit",
+      "website": "https://www.adroit-theory.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3829967990,
+    "lat": 39.3314561,
+    "lon": -76.6413678,
+    "tags": {
+      "craft": "brewery",
+      "name": "Waverly Brewing Company"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4319711301,
+    "lat": 39.4403205,
+    "lon": -77.3989904,
+    "tags": {
+      "addr:city": "Frederick",
+      "addr:housenumber": "1781",
+      "addr:postcode": "21701",
+      "addr:state": "MD",
+      "addr:street": "North Market Street",
+      "craft": "brewery",
+      "name": "Monocacy Brewing Company",
+      "opening_hours": "Th, Fr 16:00-20:00; Sa 12:00-20:00; Su 12:00-18:00"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4319976360,
+    "lat": 39.4092800,
+    "lon": -77.3912138,
+    "tags": {
+      "addr:city": "Frederick",
+      "addr:housenumber": "911",
+      "addr:postcode": "21701",
+      "addr:state": "MD",
+      "addr:street": "East Patrick Street",
+      "craft": "brewery",
+      "name": "Olde Mother Brewing",
+      "opening_hours": "Th 16:00-20:00; Fr 16:00-22:00; Sa 12:00-22:00; Su 12:00-19:00"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4334671874,
+    "lat": 38.7439594,
+    "lon": -77.6757109,
+    "tags": {
+      "addr:city": "Warrenton",
+      "addr:housenumber": "7134",
+      "addr:postcode": "20187",
+      "addr:state": "VA",
+      "addr:street": "Farm Station Road",
+      "amenity": "bar",
+      "craft": "brewery",
+      "name": "Old Bust Head Brewing Company",
+      "opening_hours": "Mo,Tu off; We-Fr 15:00-20:00; Sa 12:00-20:00; Su 12:00-19:00",
+      "phone": "+1-540-347-4777",
+      "website": "https://www.oldbusthead.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4337259638,
+    "lat": 38.9077525,
+    "lon": -77.2705542,
+    "tags": {
+      "addr:city": "Vienna",
+      "addr:housenumber": "520",
+      "addr:postcode": "22180",
+      "addr:state": "VA",
+      "addr:street": "Mill Street Northeast",
+      "craft": "brewery",
+      "name": "Caboose Brewing Company",
+      "product": "beer;food"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4749817986,
+    "lat": 38.9261480,
+    "lon": -76.9817377,
+    "tags": {
+      "addr:city": "Washington",
+      "addr:housenumber": "1601",
+      "addr:postcode": "20018",
+      "addr:state": "DC",
+      "addr:street": "Rhode Island Avenue Northeast",
+      "craft": "brewery",
+      "name": "The Public Option",
+      "opening_hours": "Fr 16:00-23:00; Sa 14:00-23:00; Su 14:00-21:00",
+      "phone": "+1-202-397-5129",
+      "website": "http://www.thepublicoptiondc.com"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4868343261,
+    "lat": 39.1377281,
+    "lon": -77.7038689,
+    "tags": {
+      "craft": "brewery",
+      "name": "Belly Love"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4897784553,
+    "lat": 38.9148494,
+    "lon": -76.9813086,
+    "tags": {
+      "addr:city": "Washington",
+      "addr:housenumber": "2052",
+      "addr:state": "DC",
+      "addr:street": "West Virginia Avenue Northeast",
+      "amenity": "bar",
+      "craft": "brewery",
+      "name": "Atlas Brew Works"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4997416984,
+    "lat": 39.4119810,
+    "lon": -77.4027555,
+    "tags": {
+      "addr:city": "Frederick",
+      "addr:housenumber": "400",
+      "addr:postcode": "21701",
+      "addr:state": "MD",
+      "addr:street": "Sagner Avenue",
+      "craft": "brewery",
+      "description": "Small brewery with tasting room, beer to go and food trucks on most days",
+      "name": "Attaboy Brewery"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5079418899,
+    "lat": 39.2233806,
+    "lon": -77.5379555,
+    "tags": {
+      "craft": "brewery",
+      "name": "Vanish Farmwoods Brewery"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5200463198,
+    "lat": 39.4402176,
+    "lon": -77.3991588,
+    "tags": {
+      "craft": "brewery",
+      "name": "The Flying Barrel",
+      "shop": "alcohol"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5276127055,
+    "lat": 38.7902321,
+    "lon": -77.5968529,
+    "tags": {
+      "craft": "brewery",
+      "name": "Tin Cannon Co."
+    }
+  },
+  {
+    "type": "node",
+    "id": 5487704236,
+    "lat": 39.7334517,
+    "lon": -75.5604968,
+    "tags": {
+      "craft": "brewery",
+      "name": "Iron Hill Brewery and Restaurant"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5554680717,
+    "lat": 39.2886358,
+    "lon": -77.8608201,
+    "tags": {
+      "amenity": "restaurant",
+      "craft": "brewery",
+      "microbrewery": "yes",
+      "name": "Abolitionist Ale Works"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5768491070,
+    "lat": 38.9944597,
+    "lon": -77.4228618,
+    "tags": {
+      "addr:city": "Sterling",
+      "addr:housenumber": "22455",
+      "addr:postcode": "20164",
+      "addr:state": "VA",
+      "addr:street": "Davis Drive",
+      "craft": "brewery",
+      "name": "Crooked Run Fermentation",
+      "operator": "Crooked Run Fermentation",
+      "product": "beer",
+      "website": "https://www.crookedrunbrewing.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5876796411,
+    "lat": 39.0239811,
+    "lon": -77.4551791,
+    "tags": {
+      "addr:city": "Ashburn",
+      "addr:housenumber": "44652",
+      "addr:postcode": "20147",
+      "addr:state": "VA",
+      "addr:street": "Guilford Drive",
+      "addr:unit": "114",
+      "bar": "yes",
+      "craft": "brewery",
+      "name": "Old Ox Brewery",
+      "phone": "+1-703-729-8375",
+      "product": "beer",
+      "website": "https://www.oldoxbrewery.com"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5927857552,
+    "lat": 38.8862718,
+    "lon": -77.1769933,
+    "tags": {
+      "amenity": "pub",
+      "craft": "brewery",
+      "microbrewery": "yes",
+      "name": "Solace Outpost",
+      "phone": "571-378-1469",
+      "website": "https://solaceoutpost.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5952305988,
+    "lat": 39.5336020,
+    "lon": -76.3459187,
+    "tags": {
+      "addr:city": "Bel Air",
+      "addr:housenumber": "319",
+      "addr:postcode": "21014",
+      "addr:state": "MD",
+      "addr:street": "South Main Street",
+      "addr:unit": "100",
+      "check_date": "2023-07-15",
+      "craft": "brewery",
+      "email": "estreett@alecraftbrewing.com",
+      "fixme": "is pin location accurate?",
+      "name": "Alecraft Brewery",
+      "phone": "410-420-5102",
+      "website": "http://www.alecraftbrewery.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5970561593,
+    "lat": 39.3314858,
+    "lon": -76.6352497,
+    "tags": {
+      "addr:city": "Baltimore",
+      "addr:country": "US",
+      "addr:housenumber": "3626A",
+      "addr:postcode": "21211",
+      "addr:state": "MD",
+      "addr:street": "Falls Road",
+      "check_date": "2023-04-17",
+      "craft": "brewery",
+      "name": "Nepenthe Brewing Company"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5987523472,
+    "lat": 38.8832818,
+    "lon": -77.4447450,
+    "tags": {
+      "bar": "yes",
+      "craft": "brewery",
+      "name": "Ono Brewing Co."
+    }
+  },
+  {
+    "type": "node",
+    "id": 5994352359,
+    "lat": 39.3366352,
+    "lon": -76.6447697,
+    "tags": {
+      "craft": "brewery",
+      "name": "Union Craft Brewing",
+      "opening_hours": "We-Sa 12:00-22:00; Su 12:00-20:00"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6166494303,
+    "lat": 39.4829662,
+    "lon": -76.6621370,
+    "tags": {
+      "addr:city": "Hunt Valley",
+      "addr:housenumber": "10950",
+      "addr:postcode": "21031",
+      "addr:state": "MD",
+      "addr:street": "Gilroy Road",
+      "addr:unit": "F",
+      "craft": "brewery",
+      "name": "B.C. Brewery",
+      "opening_hours": "We-Th 16:00-22:00, Fr-Sa 12:00-22:00, Su 12:00-18:00"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6568781871,
+    "lat": 39.1731145,
+    "lon": -76.8443513,
+    "tags": {
+      "addr:city": "Columbia",
+      "addr:housenumber": "9570",
+      "addr:postcode": "21046",
+      "addr:state": "MD",
+      "addr:street": "Berger Road",
+      "craft": "brewery",
+      "name": "Hysteria Brewing Company",
+      "opening_hours": "Mo-Th 16:00-22:00, 09:00-18:00; Fr 16:00-23:00; Sa 11:00-23:00; Su 12:00-19:00",
+      "phone": "+1-410-630-8319",
+      "product": "beer",
+      "website": "https://www.hysteriabrewing.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6610428891,
+    "lat": 39.2687506,
+    "lon": -76.5974015,
+    "tags": {
+      "addr:city": "Baltimore",
+      "addr:housenumber": "1215",
+      "addr:postcode": "21230",
+      "addr:state": "MD",
+      "addr:street": "East Fort Avenue",
+      "addr:unit": "008",
+      "craft": "brewery",
+      "name": "Diamondback Brewery",
+      "opening_hours": "Tu-Th 16:00-21:00; Fr 16:00-22:00; Sa 12:00-22:00; Su 12:00-20:00",
+      "website": "https://www.diamondbackbeer.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6720818840,
+    "lat": 38.7427618,
+    "lon": -77.5217830,
+    "tags": {
+      "addr:city": "Manassas",
+      "addr:housenumber": "9925",
+      "addr:postcode": "20109",
+      "addr:state": "VA",
+      "addr:street": "Discovery Boulevard",
+      "craft": "brewery",
+      "name": "2 Silos Brewing Company"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6783818140,
+    "lat": 38.7987804,
+    "lon": -77.0633025,
+    "tags": {
+      "addr:housenumber": "317",
+      "addr:street": "Hooffs Run Drive",
+      "craft": "brewery",
+      "description": "DRY CIDER - WHOLE INGREDIENTS - 100% FRESH SHENANDOAH APPLES",
+      "name": "Lost Boy Cidery",
+      "opening_hours": "We, Th 16:00-21:00; Sa 12:00-22:00; Su 12:00-19:30; Fr 16:00-22:00",
+      "phone": "703-566-5737",
+      "website": "https://lostboycider.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6789369992,
+    "lat": 38.9899553,
+    "lon": -78.3639384,
+    "tags": {
+      "craft": "brewery"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6789370002,
+    "lat": 38.9889916,
+    "lon": -78.3603729,
+    "tags": {
+      "craft": "brewery"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6867618735,
+    "lat": 38.9054842,
+    "lon": -77.0024379,
+    "tags": {
+      "addr:city": "Washington",
+      "addr:housenumber": "209",
+      "addr:postcode": "20002",
+      "addr:state": "DC",
+      "addr:street": "M Street Northeast",
+      "craft": "brewery",
+      "name": "Red Bear Brewing"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8068887564,
+    "lat": 39.6467573,
+    "lon": -77.1552823,
+    "tags": {
+      "addr:city": "Taneytown",
+      "addr:country": "US",
+      "addr:housenumber": "4337",
+      "addr:postcode": "21787",
+      "addr:state": "MD",
+      "addr:street": "Old Taneytown Road",
+      "addr:unit": "B",
+      "craft": "brewery",
+      "name": "Brewery Fire",
+      "opening_hours": "We 15:00-20:00;Th 15:00-22:00;Fr-Sa 12:00-22:00;Su 12:00-19:00",
+      "website": "http://www.breweryfire.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8124637239,
+    "lat": 38.7541340,
+    "lon": -77.4901002,
+    "tags": {
+      "addr:city": "Manasas",
+      "addr:country": "US",
+      "addr:housenumber": "9776",
+      "addr:postcode": "20110",
+      "addr:state": "VA",
+      "addr:street": "Center Street",
+      "craft": "brewery",
+      "entrance": "yes",
+      "name": "Badwolf Brewing Company"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8809770903,
+    "lat": 39.2294072,
+    "lon": -76.8230867,
+    "tags": {
+      "addr:housenumber": "8980",
+      "addr:street": "Old Annapolis Road",
+      "craft": "brewery",
+      "name": "Sapwood Cellars"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8888256163,
+    "lat": 39.0568969,
+    "lon": -77.4638623,
+    "tags": {
+      "addr:city": "Ashburn",
+      "addr:housenumber": "44427",
+      "addr:postcode": "20147",
+      "addr:state": "VA",
+      "addr:street": "Atwater Drive",
+      "craft": "brewery",
+      "name": "House 6 Brewing Co.",
+      "phone": "+1 571-510-3532",
+      "product": "beer",
+      "website": "https://www.house6brewing.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8934562725,
+    "lat": 39.8088570,
+    "lon": -75.6738510,
+    "tags": {
+      "addr:city": "Hockessin",
+      "addr:housenumber": "2878",
+      "addr:state": "DE",
+      "addr:street": "Creek Rd",
+      "craft": "brewery",
+      "name": "Dew Point Brewing Company",
+      "opening_hours": "Th 16:00-21:00; Fr 15:00-21:00; Sa 13:00-21:00; Su 13:00-19:00",
+      "phone": "+1 302-235-8429",
+      "website": "https://www.dewpointbrewing.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8936484972,
+    "lat": 39.1136679,
+    "lon": -77.5634913,
+    "tags": {
+      "addr:city": "Leesburg",
+      "addr:housenumber": "101",
+      "addr:postcode": "20175",
+      "addr:state": "VA",
+      "addr:street": "Loudoun Street Southeast",
+      "craft": "brewery",
+      "name": "Dynasty West",
+      "office": "company",
+      "opening_hours": "We-Th 3:00-8:00; Fr 3:00-10:00; Sa 12:00-10:00; Su 12:00-6:00",
+      "operator": "Dynasty Brewing Co.",
+      "phone": "(571)246-5991",
+      "product": "beer",
+      "website": "https://www.dynastybrewing.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8997642817,
+    "lat": 38.8041754,
+    "lon": -77.1382588,
+    "tags": {
+      "craft": "brewery",
+      "name": "Aslin Beer Company"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9038416323,
+    "lat": 39.4120000,
+    "lon": -77.4031442,
+    "tags": {
+      "craft": "brewery",
+      "name": "Smoketown Creekside",
+      "product": "beer;food"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9089037056,
+    "lat": 38.9235772,
+    "lon": -76.9955718,
+    "tags": {
+      "addr:city": "Washington",
+      "addr:housenumber": "705",
+      "addr:postcode": "20017",
+      "addr:state": "DC",
+      "addr:street": "Edgewood Street Northeast",
+      "brewery": "City-State Brewing",
+      "craft": "brewery",
+      "name": "City-State Brewing",
+      "operator": "City-State Brewing",
+      "product": "beer",
+      "website": "http://citystatebrewing.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9216501743,
+    "lat": 38.6420390,
+    "lon": -77.5805337,
+    "tags": {
+      "amenity": "pub",
+      "craft": "brewery",
+      "microbrewery": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9775306291,
+    "lat": 38.8923564,
+    "lon": -77.4377324,
+    "tags": {
+      "addr:city": "Chantilly",
+      "addr:housenumber": "14140",
+      "addr:postcode": "20151",
+      "addr:state": "VA",
+      "addr:street": "Parke Long Court",
+      "addr:unit": "A-C",
+      "craft": "brewery",
+      "name": "Mustang Sally Brewing Company",
+      "phone": "(703) 888-6447"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10038349317,
+    "lat": 39.1405411,
+    "lon": -77.1959570,
+    "tags": {
+      "craft": "brewery",
+      "email": "MANAGER@SAINTSROWBEER.COM",
+      "name": "Saints Row Brewing",
+      "website": "https://www.saintsrowbeer.com"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10198400477,
+    "lat": 39.2745875,
+    "lon": -76.6201492,
+    "tags": {
+      "addr:city": "Baltimore",
+      "addr:housenumber": "1399",
+      "addr:postcode": "21230",
+      "addr:state": "MD",
+      "addr:street": "South Sharp Street",
+      "craft": "brewery",
+      "name": "Checkerspot Brewing Company",
+      "website": "https://checkerspotbrewing.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10231336512,
+    "lat": 39.1206401,
+    "lon": -77.8246415,
+    "tags": {
+      "craft": "brewery",
+      "name": "B-Chord Brewery"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10294332147,
+    "lat": 39.2795024,
+    "lon": -76.6297653,
+    "tags": {
+      "addr:housenumber": "1100",
+      "addr:street": "Wicomico Street",
+      "craft": "brewery",
+      "name": "WICO Street Beer Company",
+      "opening_hours": "Th 15:00-22:00; Fr 15:00-22:00; Sa 12:00-22:00; Su 12:00-20:00",
+      "website": "https://www.wicostreetbeerco.com/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10681564860,
+    "lat": 39.1764241,
+    "lon": -77.1006815,
+    "tags": {
+      "addr:housenumber": "5000",
+      "addr:street": "Olney Laytonsville Road",
+      "craft": "brewery",
+      "name": "Lone Oak Brewery",
+      "opening_hours": "We, Th 15:00-20:00; Fr 12:00-21:00; Sa 11:00-21:00; Su 11:00-20:00; Mo 12:00-20:00",
+      "phone": "2402614967",
+      "website": "loneoakbrewingco.com"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10707596653,
+    "lat": 39.0277303,
+    "lon": -76.6854624,
+    "tags": {
+      "check_date": "2023-03-03",
+      "craft": "brewery",
+      "name": "Pherm Brewing Company"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10742274625,
+    "lat": 38.6280457,
+    "lon": -77.9243989,
+    "tags": {
+      "addr:housenumber": "5393",
+      "addr:street": "Higher Ground Trail",
+      "craft": "brewery",
+      "name": "Death Ridge Brewery"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10812978120,
+    "lat": 39.1246388,
+    "lon": -76.7938539,
+    "tags": {
+      "addr:housenumber": "10150",
+      "addr:street": "Junction Drive",
+      "check_date": "2023-04-14",
+      "craft": "brewery",
+      "name": "Notch 8 Brewery",
+      "opening_hours": "Mo-We 11:00-21:00; Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-20:00",
+      "phone": "+1 301-960-3333"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10915193516,
+    "lat": 38.4926869,
+    "lon": -78.2832284,
+    "tags": {
+      "craft": "brewery",
+      "name": "Shotwell Run Brewing Company"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11037941320,
+    "lat": 39.6304488,
+    "lon": -78.2241206,
+    "tags": {
+      "addr:city": "Berkeley Springs",
+      "addr:housenumber": "42",
+      "addr:postcode": "25411",
+      "addr:state": "WV",
+      "addr:street": "Williams Street",
+      "craft": "brewery",
+      "name": "Cacapon Mountain Brewing Co",
+      "opening_hours": "Mo-Wed Off; Th 16:00-20:00; Fr 16:00-21:00; Sa 12:00-21:00; Su 12:00-18:00",
+      "product": "beer",
+      "website": "https://www.cacaponbrewing.com"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11070091905,
+    "lat": 38.9140930,
+    "lon": -76.9839265,
+    "tags": {
+      "craft": "brewery",
+      "name": "Other Half Brewing"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11114566240,
+    "lat": 39.1070663,
+    "lon": -77.1468475,
+    "tags": {
+      "addr:flats": "600",
+      "addr:housenumber": "7301",
+      "addr:street": "Calhoun Place",
+      "craft": "brewery",
+      "name": "True Respite Brewing Co.",
+      "opening_hours": "Tu, We 16:00-21:00; Th 16:00-22:00; Fr 15:00-22:00; Sa 12:00-21:00; Su 12:00-19:00",
+      "phone": "+1 301 284 8447",
+      "website": "https://truerespite.com"
+    }
+  }
+  
+    ]
+  }
+  

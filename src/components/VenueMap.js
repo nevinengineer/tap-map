@@ -1,34 +1,43 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import { Map, TileLayer, Marker } from "react-leaflet";
 import "../assets/map.css";
 import { Icon } from "leaflet";
-import EstablishmentPopup from "./EstablishmentPopUp";
+import VenuePopup from "./VenuePopUp";
 import TapList from "./TapList";
 import LoadingMap from "./LoadingMap";
-import useWindowDimensions from "../hooks/useWindowDimensions";
 import Splash from "./Splash";
-import NoResults from "./NoResults";
 
-const GET_NEARBY_ESTABLISHMENT_IDS = gql`
-  query NearbyEstablishments(
-    $distance_kms: Int
-    $latitude: float8
-    $longitude: float8
-  ) {
-    search_establishments_near_user(
-      args: {
-        distance_kms: $distance_kms
-        user_lat: $latitude
-        user_long: $longitude
-      }
-    ) {
-      establishment_id
-      establishment_location
+const GET_NEARBY_VENUE_IDS = gql`
+query NearbyVenues {
+  venues {
+    venue_location {
+      location
     }
+    id
   }
+}
 `;
+
+// const GET_NEARBY_ESTABLISHMENT_IDS = gql`
+//   query NearbyEstablishments(
+//     $distance_kms: Int
+//     $latitude: float8
+//     $longitude: float8
+//   ) {
+//     search_venues_near_user(
+//       args: {
+//         distance_kms: $distance_kms
+//         user_lat: $latitude
+//         user_long: $longitude
+//       }
+//     ) {
+//       venue_id
+//       venue_location
+//     }
+//   }
+// `;
 
 const marker = new Icon({
   iconUrl: require("../static/marker.svg"),
@@ -37,12 +46,11 @@ const marker = new Icon({
   popupAnchor: [0, -40],
 });
 
-const EstablishmentMap = ({ latitude, longitude }) => {
-  const [establishmentId, setEstablishmentId] = useState(null);
+const VenueMap = ({ latitude, longitude }) => {
+  const [venueId, setVenueId] = useState(null);
   const [open, setOpen] = useState(false);
-  const [height, setHeight] = useState("100%");
   const handleMarkerClick = (e) => {
-    setEstablishmentId(e.target.options.children.props.establishment_id);
+    setVenueId(e.target.options.children.props.venue_id);
     setPosition(e.target.options.position);
     setOpen(true);
   };
@@ -57,11 +65,12 @@ const EstablishmentMap = ({ latitude, longitude }) => {
 
   const [position, setPosition] = useState([latitude, longitude]);
   const [zoom, setZoom] = useState(10);
-  let distance_kms = 2000;
+  // let distance_kms = 2000;
 
-  const { loading, error, data } = useQuery(GET_NEARBY_ESTABLISHMENT_IDS, {
-    variables: { distance_kms, latitude, longitude },
-  });
+  // const { loading, error, data } = useQuery(GET_NEARBY_ESTABLISHMENT_IDS, {
+  //   variables: { distance_kms, latitude, longitude },
+  // });
+  const { loading, error, data } = useQuery(GET_NEARBY_VENUE_IDS);
   if (loading) {
     return (
       <div>
@@ -74,7 +83,7 @@ const EstablishmentMap = ({ latitude, longitude }) => {
     return <div> An Error Occured </div>;
   }
 
-  const establishments = data.search_establishments_near_user;
+  const venues = data.venues
 
   return (
     <div className="flex xs:flex-row-reverse sm:flex-row-reverse flex-wrap ">
@@ -96,19 +105,19 @@ const EstablishmentMap = ({ latitude, longitude }) => {
             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           ></TileLayer>
-          {establishments.map((index) => (
+          {venues.map((index) => (
             <Marker
               onClick={handleMarkerClick}
-              key={index.establishment_id}
+              key={index.id}
               position={[
-                index.establishment_location.coordinates[1],
-                index.establishment_location.coordinates[0],
+                index.venue_location.location.coordinates[0],
+                index.venue_location.location.coordinates[1],
               ]}
               icon={marker}
             >
-              <EstablishmentPopup
-                establishment_id={index.establishment_id}
-              ></EstablishmentPopup>
+              <VenuePopup
+                venue_id={index.id}
+              ></VenuePopup>
             </Marker>
           ))}
         </Map>
@@ -135,13 +144,13 @@ const EstablishmentMap = ({ latitude, longitude }) => {
             : "hidden"
         } flex`}
       >
-        {establishmentId !== null && (
-          <TapList establishment_id={establishmentId}></TapList>
+        {venueId !== null && (
+          <TapList venue_id={venueId}></TapList>
         )}
       </div>
     </div>
   );
 };
 
-export default EstablishmentMap;
-export { GET_NEARBY_ESTABLISHMENT_IDS };
+export default VenueMap;
+export { GET_NEARBY_VENUE_IDS };

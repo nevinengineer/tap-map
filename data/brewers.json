@@ -1,0 +1,199 @@
+[
+    {
+        "name": "Placeholder Brewing",
+        "brews": {
+            "data": [
+                {
+                    "name": "Test IPA",
+                    "type": "IPA",
+                    "subtype": "New England / Hazy",
+                    "description": "Fruity hop character, pillowy mouthfeel, citrus notes.",
+                    "abv": 7.4,
+                    "ibu": 47
+                }
+            ]
+        }
+    },
+    {
+        "name": "Caboose Brewing Company",
+        "brews": {
+            "data": [
+                {
+                    "name": "Fog IPA",
+                    "type": "IPA",
+                    "subtype": "New England / Hazy",
+                    "description": "Fruity hop character, juicy mouthfeel, citrus notes.",
+                    "abv": 7.0,
+                    "ibu": 42
+                },
+                {
+                    "name": "Vienna, VA Lager",
+                    "type": "Lager",
+                    "subtype": "Vienna",
+                    "description": "Medium body, crisp finish, well balanced. Malt forward, easy drinking Vienna-style lager, perfect for any time of year.",
+                    "abv": 5.3,
+                    "ibu": 22
+                },
+                {
+                    "name": "Citra Session IPA",
+                    "type": "IPA",
+                    "subtype": "American Session",
+                    "description": "Light bodied, citra hopped, tropical aromas.",
+                    "abv": 4.8,
+                    "ibu": 38
+                },
+                {
+                    "name": "Barrel Fermented Flanders Style Red Ale",
+                    "type": "Red Ale",
+                    "subtype": "Barrel Aged",
+                    "description": "This ale spent 9 months in oak barrels with a wild house culture of yeast and bacteria harvested from the blossoms of the Black Locust tree growing at our brewery.",
+                    "abv": 7.2,
+                    "ibu": 22
+                },
+                {
+                    "name": "Das Gut German Pilsner",
+                    "type": "Pilsner",
+                    "subtype": "German",
+                    "description": "Brewed with 100% German malt. Moderately assertive bitterness rounds out the malty sweetness. Earthy aroma from a massive late hop addition with Spalt hops.",
+                    "abv": 5.1,
+                    "ibu": 30
+                },
+                {
+                    "name": "Bourbon Barrel Aged Fireside Ale",
+                    "type": "Rye Ale",
+                    "subtype": "Barrel Aged",
+                    "description": "Notes of vanilla, toasted almond, anise, pink pepper, toffee, and caramel corn.",
+                    "abv": 12.0,
+                    "ibu": 28
+                },
+                {
+                    "name": "Boxcar Brown Ale",
+                    "type": "Brown Ale",
+                    "subtype": "American",
+                    "description": "Smooth, robust, hints of rich chocolate, dark fruit notes.",
+                    "abv": 5.0,
+                    "ibu": 22
+                },
+                {
+                    "name": "Bienvenidos Mexican Lager",
+                    "type": "Lager",
+                    "subtype": "Mexican",
+                    "description": "A light-bodied beer with mild bitterness, crisp sweetness, and clean finish with a hint of salt.",
+                    "abv": 4.9,
+                    "ibu": 24
+                }
+            ]
+        }
+    },
+    {
+        "name": "Old Bust Head Brewing Company",
+        "brews": {
+            "data": [
+                {
+                    "name": "Bust Head",
+                    "type": "Ale",
+                    "subtype": "English",
+                    "description": "Brewed in the tradition of an English Pale Ale, but infused with the spirit of new American craft brews, our flagship beer is drinkable, balanced, and enjoyable year-round. Additions of Goldings, Fuggle, and Cascade hops provide our pale ale with the aroma of floral hop tones, as well as imparting a refreshing, clean bitterness. Our use of caramel malt in the grain bill balances out our generous hop additions, and provides the beer with a smooth and bready backbone. ",
+                    "abv": 5.6,
+                    "ibu": 21
+                },
+                {
+                    "name": "Vixen",
+                    "type": "Red Ale",
+                    "subtype": "Irish",
+                    "description": "Our deep amber Vixen Irish Red, has a luster as rich as the thick-coated red fox that roams the local wood.  Medium bodied, with a clean finish, Vixen draws you in with a sweet caramel allure up front and gives chase with hints of roasted malt through the taste.  A tea-like soft bitterness on the backend is so pleasing, you just may find you're reaching for another glass of this wily brew. ",
+                    "abv": 5.4,
+                    "ibu": 23
+                },
+                {
+                    "name": "Caramel Macchiato",
+                    "type": "Stout",
+                    "subtype": "Oatmeal",
+                    "description": "Using our Oatmeal Stout as a base and fresh roasted coffee, our Caramel Macchiato Stout has the rich aroma of flavored iced coffee. Vanilla extract and natural sugar combine with the roasted malts to lend a subtle caramel sweetness for a brew that is refreshing in the summer and decadent in the winter!",
+                    "abv": 5.7,
+                    "ibu": 30
+                },
+                {
+                    "name": "Graffiti House",
+                    "type": "IPA",
+                    "subtype": "West Coast",
+                    "description": "From Civil War scrawls on the walls of Graffiti House to illicit aerosol artistry we all endeavor to leave our mark.  Our Graffiti House West Coast Style IPA asserts its presence with a potent aroma of passion fruit, mango, guava, and citrus.  The bold and juicy tropical body is a unique signature of the Mosaic hops, while Cascade hops contribute to a clean citrus finish for a flavor so singular it leaves its own indelible impression.",
+                    "abv": 7.4,
+                    "ibu": 45
+                },
+                {
+                    "name": "Sky Meadows",
+                    "type": "Lager",
+                    "subtype": "Blonde",
+                    "description": "Named after the state park located in northwest Fauquier County, Sky Meadows is a medium-bodied, clean, and crisp Blonde Lager with hints of toasted bread and herbal spice from German hops. You can expect a clean malty backbone and a pillowy soft mouthfeel from the addition of flaked maize.",
+                    "abv": 4.7,
+                    "ibu": 18.1
+                },
+                {
+                    "name": "Shore Runner",
+                    "type": "IPA",
+                    "description": "Named after our brewmaster's dog, Hunter, Shore Runner is a clean and crisp IPA made for days on the lake with your best four-legged friend, after a day on the golf course or mowing the lawn.You can expect aromas of juicy mango, citrus, tropical fruit and pine from a dry-hop of Comet, Azacca and Idaho 7, bitterness on the lower end of the range, and a bready malt character to compliment the hop flavors.",
+                    "abv": 5.9,
+                    "ibu": 40
+                }
+            ]
+        }
+    },
+    {
+        "name": "Chubby Squirrel Brewing Company",
+        "brews": {
+            "data": [
+                {
+                    "name": "Intergalactic Squirrel IPA",
+                    "type": "IPA",
+                    "abv": 7.0
+                },
+                {
+                    "name": "Caldera IPA",
+                    "type": "IPA",
+                    "abv": 6.5,
+                    "ibu": 100
+                },
+                {
+                    "name": "Woke Squirrel",
+                    "type": "Sour",
+                    "subtype": "Fruited",
+                    "abv": 5.0
+                },
+                {
+                    "name": "Cloudy Squirrel Pale Ale",
+                    "type": "Ale",
+                    "subtype": "Pale",
+                    "abv": 8.0
+                },
+                {
+                    "name": "India Pale Lager",
+                    "type": "Lager",
+                    "abv": 7.0
+                },
+                {
+                    "name": "Chubby Czech Pilsner",
+                    "type": "Pilsner",
+                    "subtype": "Czech",
+                    "abv": 6.0
+                },
+                {
+                    "name": "Cobbler Mountain Pumpkin Cider",
+                    "type": "Cider",
+                    "abv": 6.7
+                },
+                {
+                    "name": "Captain Greytail's Coco-Booty Coconut Porter",
+                    "type": "Porter",
+                    "abv": 7.0
+                },
+                {
+                    "name": "Chubb Lite",
+                    "type": "Lager",
+                    "subtype": "Light",
+                    "abv": 4.0
+                }
+            ]
+        }
+    }
+]

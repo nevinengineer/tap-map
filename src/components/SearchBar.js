@@ -26,7 +26,7 @@ const SearchBar = ({ onChildSubmit }) => {
           className="rounded-full appearance-none border w-full float-none py-2 px-10 text-gray-700 leading-tight flex text-start focus:outline-none focus:border-teal-800 focus:bg-gray-200"
           id="search"
           placeholder="search beer, breweries..."
-          value={input}
+          // value={input}
           onInput={(e) => setInput(e.target.value)}
         ></input>
         <div className="pointer-events-none absolute inset-y-0 left-0 px-3 flex items-center text-gray-500">

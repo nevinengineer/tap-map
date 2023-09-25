@@ -4,35 +4,55 @@ import gql from "graphql-tag";
 import TapItem from "./TapItem";
 import SkeletonLoader from "./SkeletonLoader";
 import NoResults from "./NoResults";
-import Splash from "./Splash";
 
-const ON_TAP_AT_ESTABLISHMENT = gql`
-  query OnTapAtEstablishment($establishment_id: uuid) {
-    establishments(where: { id: { _eq: $establishment_id } }) {
-      name
-    }
-    on_tap(
-      where: { establishment_id: { _eq: $establishment_id } }
-      order_by: { updated: desc }
-    ) {
-      brewByBrew {
+const ON_TAP_AT_VENUE = gql`
+query BrewsAtEstablishment($venue_id: uuid) {
+  venues(where: {id: {_eq: $venue_id}}) {
+    name
+    venue_beers(order_by: {beer: {name: asc}}) {
+      beer {
+        id
+        abv
+        ibu
         name
         type
+        subtype
         description
         brewer {
           name
         }
-        abv
-        ibu
       }
-      updated
     }
   }
-`;
+}
+`
+// const ON_TAP_AT_ESTABLISHMENT = gql`
+//   query OnTapAtEstablishment($venue_id: uuid) {
+//     venues(where: { id: { _eq: $venue_id } }) {
+//       name
+//     }
+//     on_tap(
+//       where: { venue_id: { _eq: $venue_id } }
+//       order_by: { updated: desc }
+//     ) {
+//       beerByBrew {
+//         name
+//         type
+//         description
+//         brewer {
+//           name
+//         }
+//         abv
+//         ibu
+//       }
+//       updated
+//     }
+//   }
+// `;
 
-const TapList = ({ establishment_id }) => {
-  const { loading, error, data } = useQuery(ON_TAP_AT_ESTABLISHMENT, {
-    variables: { establishment_id },
+const TapList = ({ venue_id }) => {
+  const { loading, error, data } = useQuery(ON_TAP_AT_VENUE, {
+    variables: { venue_id },
   });
   if (loading) {
     return (
@@ -49,30 +69,25 @@ const TapList = ({ establishment_id }) => {
     console.error(error);
     return <div>{error}</div>;
   }
-  console.log(data);
   const tapList = [];
-  data.on_tap.forEach((index) => {
-    tapList.push(<TapItem key={index} index={index} brew={index} />);
+  data.venues[0].venue_beers.forEach((item) => {
+    tapList.push(<TapItem key={item.id} index={item.id} data={item.beer} />);
   });
   return (
-    <div>
-      <div className="font-bold text-xl text-justify text-teal-800 m-2 tracking-tight">
-        On Tap at {data.establishments[0].name}
+    <div class="flex flex-col w-full">
+      <div className="font-bold text-xl text-center bg-teal-700 text-white md:text-teal-700 md:bg-white lg:text-teal-700 lg:bg-white p-2 rounded-t-lg md:rounded-t-none lg:rounded-t-none whitespace-nowrap">
+        On Tap at {data.venues[0].name}
       </div>
       <div>
-        {data.on_tap.length !== 0 && (
+        {data.venues[0].venue_beers.length !== 0 && (
           <div className="flex grid grid-cols-1 overflow-auto max-h-screen">
             {tapList}
           </div>
         )}
-        {data.on_tap.length === 0 && (
-          <div>
-            <div className="flex justify-center">
-              <NoResults width={"100%"} height={"100%"}></NoResults>
-            </div>
-            <div className="flex justify-center text-teal-900 font-bold text-xl">
-              We're comin' up empty!
-            </div>
+        {data.venues[0].venue_beers.length === 0 && (
+          <div className="flex flex-col items-center justify-center">
+            <NoResults width={"50vmin"} height={"50vmin"}></NoResults>
+            <p className="text-teal-700 font-bold text-xl">We're comin' up empty!</p>
           </div>
         )}
       </div>

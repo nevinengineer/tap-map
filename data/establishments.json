@@ -1,0 +1,466 @@
+[
+    {
+        "address": "10382 Willard Way, Fairfax, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.8486437,
+                -77.3032818
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Chubby Squirrel Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "5788 2nd Street Northeast, Washington, DC",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.9603005,
+                -77.0053314
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Hellbender Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "327 S Street Northeast, Washington, DC",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.91387,
+                -77.000856
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Lost Generation Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "404 Browning Court, Purcellville, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.1440042,
+                -77.7203208
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Adroit Theory Brewing",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "1781 North Market Street, Frederick, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.4403205,
+                -77.3989904
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Monocacy Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "911 East Patrick Street, Frederick, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.40928,
+                -77.3912138
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Olde Mother Brewing",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "7134 Farm Station Road, Warrenton, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.7439594,
+                -77.6757109
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Old Bust Head Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "520 Mill Street Northeast, Vienna, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.9077525,
+                -77.2705542
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Caboose Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "1601 Rhode Island Avenue Northeast, Washington, DC",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.926148,
+                -76.9817377
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "The Public Option",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "2052 West Virginia Avenue Northeast, Washington, DC",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.9148494,
+                -76.9813086
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Atlas Brew Works",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "400 Sagner Avenue, Frederick, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.411981,
+                -77.4027555
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Attaboy Brewery",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "22455 Davis Drive, Sterling, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.9944597,
+                -77.4228618
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Crooked Run Fermentation",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "44652 Guilford Drive, Ashburn, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.0239811,
+                -77.4551791
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Old Ox Brewery",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "319 South Main Street, Bel Air, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.533602,
+                -76.3459187
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Alecraft Brewery",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "3626A Falls Road, Baltimore, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.3314858,
+                -76.6352497
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Nepenthe Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "10950 Gilroy Road, Hunt Valley, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.4829662,
+                -76.662137
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "B.C. Brewery",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "9570 Berger Road, Columbia, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.1731145,
+                -76.8443513
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Hysteria Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "1215 East Fort Avenue, Baltimore, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.2687506,
+                -76.5974015
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Diamondback Brewery",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "9925 Discovery Boulevard, Manassas, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.7427618,
+                -77.521783
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "2 Silos Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "209 M Street Northeast, Washington, DC",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.9054842,
+                -77.0024379
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Red Bear Brewing",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "4337 Old Taneytown Road, Taneytown, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.6467573,
+                -77.1552823
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Brewery Fire",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "9776 Center Street, Manasas, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.754134,
+                -77.4901002
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Badwolf Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "44427 Atwater Drive, Ashburn, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.0568969,
+                -77.4638623
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "House 6 Brewing Co.",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "2878 Creek Rd, Hockessin, DE",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.808857,
+                -75.673851
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Dew Point Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "101 Loudoun Street Southeast, Leesburg, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.1136679,
+                -77.5634913
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Dynasty West",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "705 Edgewood Street Northeast, Washington, DC",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.9235772,
+                -76.9955718
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "City-State Brewing",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "14140 Parke Long Court, Chantilly, VA",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                38.8923564,
+                -77.4377324
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Mustang Sally Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "1399 South Sharp Street, Baltimore, MD",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.2745875,
+                -76.6201492
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Checkerspot Brewing Company",
+                "description": ""
+            }
+        }
+    },
+    {
+        "address": "42 Williams Street, Berkeley Springs, WV",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                39.6304488,
+                -78.2241206
+            ]
+        },
+        "establishments": {
+            "data": {
+                "name": "Cacapon Mountain Brewing Co",
+                "description": ""
+            }
+        }
+    }
+]

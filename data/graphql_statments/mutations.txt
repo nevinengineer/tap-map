@@ -1,0 +1,58 @@
+mutation InsertLocations($objects: [locations_insert_input!]!) {
+    insert_locations(objects: $objects) {
+      returning {
+        id
+        address
+        location
+        establishments {
+          id
+          name
+          description
+        }
+      }
+    }
+  }
+
+
+mutation InsertBrewers($objects: [brewers_insert_input!]!) {
+  insert_brewers(objects: $objects) {
+    returning {
+      id
+      name
+      brews {
+        id
+        name
+        type
+        description
+        abv
+        ibu
+      }
+    }
+  }
+}
+
+mutation InsertTaps($objects: [venues_beers_insert_input!] = {}) {
+  insert_venues_beers(objects: $objects) {
+    returning {
+      beer_id
+      venue_id
+    }
+  }
+}
+
+query BeersAtVenue {
+  venues(where: {id: {_eq: "be82e012-3082-42ec-ab50-fecc56efa429"}}) {
+    name
+    venue_beers(order_by: {brew: {name: asc}}) {
+      beer {
+        abv
+        brewer {
+          name
+        }
+        ibu
+        name
+        type
+      }
+    }
+  }
+}

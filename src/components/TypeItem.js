@@ -1,17 +1,17 @@
 import React from "react";
 import MapComponent from "./Map";
 import "../assets/tailwind.css";
-import BrewItem from "./BrewItem";
+import BrewItem from "./BeerItem";
 
-const flipLongLat = ({ coordinates }) => {
-  const long = coordinates[0];
-  const lat = coordinates[1];
-  const position = [];
-  position.push(lat);
-  position.push(long);
+// const flipLongLat = ({ coordinates }) => {
+//   const long = coordinates[0];
+//   const lat = coordinates[1];
+//   const position = [];
+//   position.push(lat);
+//   position.push(long);
 
-  return position;
-};
+//   return position;
+// };
 
 const TypeBrewItem = ({ brew }) => {
   return (
@@ -27,8 +27,6 @@ const TypeItem = ({ type }) => {
   console.log(type);
   type.brews.forEach((brew, index) => {
     brewTypeList.push(<TypeBrewItem key={index} index={index} brew={brew} />);
-    // console.log(type)
-    // console.log(brew)
   });
 
   return (
